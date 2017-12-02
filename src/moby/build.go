@@ -559,3 +559,7 @@ func filesystem(m Moby, tw *tar.Writer, idMap map[string]uint32) error {
 	}
 	return nil
 }
+
+func SetLogOutput(out io.Writer) {
+	log.SetOutput(out)
+}
